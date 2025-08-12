@@ -3,6 +3,6 @@ module.exports = {
   useTabs: false,
   bracketSpacing: true,
   jsxBracketSameLine: false,
-  proseWrap: 'preserve',
+  proseWrap: "preserve",
   printWidth: 100,
-}
+};

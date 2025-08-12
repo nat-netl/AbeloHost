@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
+const StylelintPlugin = require("stylelint-webpack-plugin");
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: true,
+  webpack: (config, options) => {
+    config.plugins.push(new StylelintPlugin());
+    return config;
+  },
 };
 
 export default nextConfig;
