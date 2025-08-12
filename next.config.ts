@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+
 const StylelintPlugin = require("stylelint-webpack-plugin");
 
 const nextConfig: NextConfig = {
