@@ -5,6 +5,7 @@ import reactHooks from "eslint-plugin-react-hooks";
 import { defineConfig } from "eslint/config";
 import globals from "globals";
 import tseslint from "typescript-eslint";
+import prettierConfig from 'eslint-config-prettier';
 
 export default defineConfig([
   {
@@ -35,4 +36,5 @@ export default defineConfig([
     },
   },
   tseslint.configs.recommended,
+  prettierConfig
 ]);
