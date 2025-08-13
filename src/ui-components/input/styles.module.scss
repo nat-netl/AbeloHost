@@ -3,6 +3,7 @@
 .box {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   .input {
     border-radius: 4px;
@@ -27,6 +28,9 @@
   }
 
   .error {
+    position: absolute;
+    bottom: -16px;
+
     .error-text {
       color: $accent-red-error;
       font-size: 12px;

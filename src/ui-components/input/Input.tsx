@@ -5,10 +5,16 @@ import styles from "./styles.module.scss";
 
 interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
   className?: string;
-  error: string;
+  error?: string;
 }
 
-const Input: FC<IInputProps> = ({ className, required = true, type = "text", error, ...props }) => {
+const Input: FC<IInputProps> = ({
+  className,
+  required = false,
+  type = "text",
+  error,
+  ...props
+}) => {
   return (
     <div className={styles.box}>
       <input

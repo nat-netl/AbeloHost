@@ -1,7 +1,21 @@
+"use client";
+
 import { Header } from "@/components/Header";
 import { Login } from "@/components/Login";
+import useAuthStore from "@/store/authStore";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
-const page = () => {
+const LoginPage = () => {
+  const { user } = useAuthStore();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (user) {
+      router.push("/");
+    }
+  }, [router, user]);
+
   return (
     <>
       <Header />
@@ -10,4 +24,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default LoginPage;
