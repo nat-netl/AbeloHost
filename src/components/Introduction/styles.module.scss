@@ -1,0 +1,17 @@
+@use "../../styles/variables" as *;
+
+.box {
+  background-color: $secondary-black;
+  padding: 10px 0;
+}
+
+@media screen and (width <= 920px) {
+  .contacts {
+    display: none;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: right;
+  }
+}

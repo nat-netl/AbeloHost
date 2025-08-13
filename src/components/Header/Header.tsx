@@ -1,13 +1,13 @@
 import { LinkOverlay } from "@/ui-components/links/Link";
 import classNames from "classnames";
 
-import { Contacts } from "../Contacts";
+import { Introduction } from "../Introduction";
 import styles from "./styles.module.scss";
 
 const Header = () => {
   return (
     <header className={styles.box}>
-      <Contacts className={styles.contacts} />
+      <Introduction />
 
       <div className={classNames("container", styles.wrapper)}>
         <LinkOverlay href="/" className={styles.logo}>

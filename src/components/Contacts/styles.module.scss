@@ -1,13 +1,14 @@
 @use "../../styles/variables" as *;
 
-.box {
-  background-color: $secondary-black;
+.wrapper {
+  display: flex;
+  padding: 60px 10px 10px 20px;
+  flex-direction: column;
+}
 
-  .wrapper {
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-  }
+.contacts {
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .contacts,
@@ -28,4 +29,17 @@
   max-width: 50px;
   font-size: 12px;
   height: 30px;
+}
+
+@media screen and (width >= 920px) {
+  .wrapper {
+    justify-content: space-between;
+    padding: 5px 0;
+    flex-direction: row;
+  }
+
+  .contacts {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
 }

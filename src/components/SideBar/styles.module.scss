@@ -1,0 +1,44 @@
+@use "../../styles/variables" as *;
+
+.btn {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.menu {
+  display: none;
+  animation: 0.5s linear showsidebar;
+}
+
+@keyframes showsidebar {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (width <= 920px) {
+  .btn {
+    display: flex;
+  }
+
+  .menu-active {
+    z-index: 9;
+    position: fixed;
+    right: 0;
+    background-color: $black;
+    top: 0;
+    max-width: 252px;
+    width: 100%;
+    height: 100vh;
+    display: block;
+  }
+}
