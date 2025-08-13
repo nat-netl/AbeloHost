@@ -4,9 +4,9 @@ import classNames from "classnames";
 import { Contacts } from "../Contacts";
 import styles from "./styles.module.scss";
 
-const Header = () => {
+const Footer = () => {
   return (
-    <header className={styles.box}>
+    <footer className={styles.box}>
       <Contacts />
 
       <div className={classNames("container", styles.wrapper)}>
@@ -15,8 +15,8 @@ const Header = () => {
           <span className={styles.dot}>.</span>
         </LinkOverlay>
       </div>
-    </header>
+    </footer>
   );
 };
 
-export default Header;
+export default Footer;

@@ -6,7 +6,7 @@ import email from "../../../assets/icons/email.svg";
 import person from "../../../assets/icons/person.svg";
 import place from "../../../assets/icons/place.svg";
 import telephone from "../../../assets/icons/telephone.svg";
-import styles from "./style.module.scss";
+import styles from "./styles.module.scss";
 
 const Contacts = () => {
   return (

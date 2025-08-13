@@ -12,6 +12,7 @@
   }
 
   &:hover * {
+    transition: all 0.8s;
     color: $dark-gray !important;
   }
 }

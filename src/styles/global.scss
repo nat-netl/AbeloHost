@@ -41,17 +41,19 @@ html {
 body {
   position: relative;
   line-height: 19.38px;
-  margin-bottom: 80px;
   font-family: $inter-light;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
+}
 
-  &:hover {
-    transition: all 0.8s;
-  }
+.content {
+  flex: 1;
 }
 
 button {
