@@ -1,3 +1,5 @@
+import { Contacts } from "@/components/Contacts";
+import { Header } from "@/components/Header";
 import type { Metadata } from "next";
 
 import "./../styles/global.scss";
@@ -14,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Contacts />
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,6 +1,5 @@
 "use client";
 
-import { Header } from "@/components/Header";
 import { Login } from "@/components/Login";
 import useAuthStore from "@/store/authStore";
 import { useRouter } from "next/navigation";
@@ -18,7 +17,6 @@ const LoginPage = () => {
 
   return (
     <>
-      <Header />
       <Login />
     </>
   );

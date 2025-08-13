@@ -5,7 +5,7 @@ import { FC, ReactNode } from "react";
 import styles from "./styles.module.scss";
 
 interface ILinkProps extends LinkProps {
-  className: string;
+  className?: string;
   children: ReactNode;
 }
 

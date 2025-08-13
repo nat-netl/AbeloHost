@@ -1,0 +1,24 @@
+@use "../../styles/variables" as *;
+
+.box {
+  background-color: $secondary-black;
+
+  .wrapper {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contacts,
+.auth {
+  display: flex;
+  gap: 10px;
+
+  .contact {
+    display: inherit;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+  }
+}
