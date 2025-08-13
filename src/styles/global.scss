@@ -40,7 +40,6 @@ html {
 
 body {
   position: relative;
-  line-height: 19.38px;
   font-family: $inter-light;
   display: flex;
   flex-direction: column;
@@ -54,6 +53,13 @@ a {
 
 .content {
   flex: 1;
+}
+
+h1 {
+  font-family: $inter-bold;
+  font-size: 45px;
+  line-height: initial;
+  margin-bottom: 30px;
 }
 
 button {
@@ -87,5 +93,11 @@ button {
 @media screen and (width >= 1280px) {
   .container {
     width: $desktop-width;
+  }
+}
+
+@media screen and (width >= 1440px) {
+  .container {
+    width: 1440px;
   }
 }
