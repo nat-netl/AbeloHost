@@ -1,0 +1,36 @@
+@use "./../../styles/variables" as *;
+
+.box {
+  display: flex;
+  flex-direction: column;
+
+  .input {
+    border-radius: 4px;
+    width: 100%;
+    max-height: 46px;
+    height: 100%;
+    background-color: $white;
+    font-size: 16px;
+    padding: 12px 16px;
+    line-height: 22.4px;
+    color: $black;
+    margin-bottom: 4px;
+    border: 1px solid $light-gray;
+
+    &:hover {
+      border-color: $dark-gray;
+    }
+
+    &:focus {
+      border-color: $secondary-black;
+    }
+  }
+
+  .error {
+    .error-text {
+      color: $accent-red-error;
+      font-size: 12px;
+      line-height: 16.8px;
+    }
+  }
+}
