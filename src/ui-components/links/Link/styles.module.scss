@@ -1,0 +1,18 @@
+@use "../../../styles/variables" as *;
+
+.link {
+  color: $light-gray;
+  font-size: 16px;
+  line-height: 22.4px;
+  outline: none;
+  transition: all 0.8s;
+
+  &:hover svg path {
+    fill: $white;
+  }
+
+  &:hover * {
+    transition: all 0.8s;
+    color: $dark-gray !important;
+  }
+}

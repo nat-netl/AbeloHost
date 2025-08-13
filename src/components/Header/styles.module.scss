@@ -1,0 +1,40 @@
+@use "../../styles/variables" as *;
+
+.wrapper {
+  padding: 30px 0;
+}
+
+.box {
+  background-color: $black;
+  border-bottom: 3px solid $accent-red-error;
+  margin-bottom: 40px;
+}
+
+.image {
+  height: 250px;
+}
+
+.logo {
+  height: auto;
+  font-family: $inter-bold;
+  line-height: initial;
+  font-size: 7vw;
+}
+
+.dot {
+  color: $accent-red;
+}
+
+@media screen and (width >= 920px) {
+  .wrapper {
+    padding: 60px 0;
+  }
+
+  .image {
+    height: 300px;
+  }
+
+  .logo {
+    font-size: 48px;
+  }
+}

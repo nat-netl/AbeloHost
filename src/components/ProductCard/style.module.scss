@@ -1,0 +1,46 @@
+@use "../../styles/variables" as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid $light-gray;
+  padding: 10px;
+  width: auto;
+}
+
+.image {
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  .title {
+    font-family: $inter-medium;
+    text-align: center;
+  }
+
+  .category {
+    color: $light-gray;
+  }
+
+  .price {
+    font-family: $inter-bold;
+  }
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+@media screen and (width <= 920px) {
+  .image {
+    height: 250px;
+    width: 100%;
+  }
+}

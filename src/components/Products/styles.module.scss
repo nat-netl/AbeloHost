@@ -1,0 +1,36 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.title {
+  font-size: 8vw;
+}
+
+.loader {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (width >= 520px) {
+  .products {
+    gap: 24px;
+    margin-bottom: 100px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width >= 920px) {
+  .products {
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .title {
+    font-size: 48px;
+  }
+}

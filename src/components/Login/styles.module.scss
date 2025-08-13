@@ -1,0 +1,37 @@
+@use "../../styles/variables" as *;
+
+.box {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .wrapper {
+    max-width: 500px;
+  }
+}
+
+.title {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.btn {
+  margin-bottom: 4px;
+}
+
+.btn,
+.input {
+  width: 100%;
+}
+
+.error {
+  color: $accent-red-error;
+  font-size: 12px;
+  line-height: 16.8px;
+}
