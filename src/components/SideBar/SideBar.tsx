@@ -13,9 +13,7 @@ import styles from "./styles.module.scss";
 const SideBar = () => {
   const [isShowSideBar, setIsShowSideBar] = useState(false);
 
-  const toggleMenu = () => {
-    setIsShowSideBar(!isShowSideBar);
-  };
+  const toggleMenu = () => setIsShowSideBar(!isShowSideBar);
 
   return (
     <>
