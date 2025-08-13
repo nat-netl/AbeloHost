@@ -13,6 +13,7 @@
 .image {
   width: 100%;
   object-fit: cover;
+  margin-bottom: 10px;
 }
 
 .info {
@@ -23,6 +24,7 @@
 
   .title {
     font-family: $inter-medium;
+    text-align: center;
   }
 
   .category {
@@ -38,7 +40,7 @@
   margin-top: 10px;
 }
 
-@media screen and (width < 920px) {
+@media screen and (width <= 920px) {
   .image {
     height: 250px;
   }
