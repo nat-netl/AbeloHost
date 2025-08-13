@@ -21,9 +21,9 @@ const Products = () => {
           </div>
         ) : (
           <div className={styles.products}>
-            {products.map((product) => {
-              return <ProductCard key={product.id} {...product} />;
-            })}
+            {products.map((product) => (
+              <ProductCard key={product.id} {...product} />
+            ))}
           </div>
         )}
       </div>
