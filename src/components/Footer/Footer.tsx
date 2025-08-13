@@ -8,12 +8,19 @@ import styles from "./styles.module.scss";
 const Footer = () => {
   const { user } = useAuthStore();
   const currentYear = new Date().getFullYear();
+
   return (
     <footer className={styles.box}>
       <div className={classNames("container", styles.wrapper)}>
         <div className={styles.info}>
           <span>{currentYear}</span>
-          {user ? <span> `Logged as ${user.email}` </span> : ""}
+          {user ? (
+            <span>
+              &quot;Logged as {user.firstName} {user.email}&quot;
+            </span>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </footer>

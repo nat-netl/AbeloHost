@@ -1,3 +1,7 @@
+"use client";
+
+import useAuthStore from "@/store/authStore";
+import { DeffaultButton } from "@/ui-components/buttons/DeffaultButton";
 import { LinkOverlay } from "@/ui-components/links/Link";
 import classNames from "classnames";
 import Image from "next/image";
@@ -9,6 +13,8 @@ import telephone from "../../../assets/icons/telephone.svg";
 import styles from "./styles.module.scss";
 
 const Contacts = () => {
+  const { user, logout } = useAuthStore();
+
   return (
     <div className={styles.box}>
       <div className={classNames("container", styles.wrapper)}>
@@ -28,10 +34,22 @@ const Contacts = () => {
         </div>
 
         <div className={styles.auth}>
-          <LinkOverlay className={styles.contact} href="/login">
-            <Image height="15" src={person} alt="person" />
-            <span>Login</span>
-          </LinkOverlay>
+          {user ? (
+            <>
+              <span className={styles.contact}>
+                <Image height="15" src={person} alt="person" />
+                {user.firstName} {user.lastName}
+              </span>
+              <DeffaultButton className={styles.logout} onClick={logout}>
+                Logout
+              </DeffaultButton>
+            </>
+          ) : (
+            <LinkOverlay className={styles.contact} href="/login">
+              <Image height="15" src={person} alt="person" />
+              <span>Login</span>
+            </LinkOverlay>
+          )}
         </div>
       </div>
     </div>
