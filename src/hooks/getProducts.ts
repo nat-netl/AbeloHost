@@ -6,13 +6,11 @@ import { useEffect, useState } from "react";
 interface IUserProductsResult {
   products: IProduct[];
   loading: boolean;
-  error: any;
 }
 
 export const useProducts = (): IUserProductsResult => {
   const [products, setProducts] = useState<IProduct[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -20,7 +18,7 @@ export const useProducts = (): IUserProductsResult => {
         const productsData = await getProducts();
         setProducts(productsData);
       } catch (err: any) {
-        setError(err.message || "Failed to fetch products");
+        console.log(err.message);
       } finally {
         setLoading(false);
       }
@@ -29,5 +27,5 @@ export const useProducts = (): IUserProductsResult => {
     fetchProducts();
   }, []);
 
-  return { products, loading, error };
+  return { products, loading };
 };
