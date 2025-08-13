@@ -5,6 +5,10 @@
   margin-bottom: 80px;
 }
 
+.title {
+  font-size: 8vw;
+}
+
 @media screen and (width >= 520px) {
   .products {
     gap: 24px;
@@ -17,5 +21,9 @@
   .products {
     gap: 24px;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .title {
+    font-size: 48px;
   }
 }

@@ -12,7 +12,7 @@ const Products = () => {
   return (
     <div className={styles.box}>
       <div className={classNames("container", styles.wrapper)}>
-        <h1>Products</h1>
+        <h1 className={styles.title}>Products</h1>
         <div className={styles.products}>
           {products.map((product) => {
             return <ProductCard key={product.id} {...product} />;

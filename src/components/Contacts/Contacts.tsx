@@ -5,6 +5,7 @@ import { DeffaultButton } from "@/ui-components/buttons/DeffaultButton";
 import { LinkOverlay } from "@/ui-components/links/Link";
 import classNames from "classnames";
 import Image from "next/image";
+import { FC } from "react";
 
 import email from "../../../assets/icons/email.svg";
 import person from "../../../assets/icons/person.svg";
@@ -12,11 +13,15 @@ import place from "../../../assets/icons/place.svg";
 import telephone from "../../../assets/icons/telephone.svg";
 import styles from "./styles.module.scss";
 
-const Contacts = () => {
+interface IContactsProps {
+  className?: string;
+}
+
+const Contacts: FC<IContactsProps> = ({ className }) => {
   const { user, logout } = useAuthStore();
 
   return (
-    <div className={styles.box}>
+    <div className={classNames(className, styles.box)}>
       <div className={classNames("container", styles.wrapper)}>
         <div className={styles.contacts}>
           <LinkOverlay className={styles.contact} href="tel:+013-13-32-21">
