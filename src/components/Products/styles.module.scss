@@ -9,6 +9,13 @@
   font-size: 8vw;
 }
 
+.loader {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (width >= 520px) {
   .products {
     gap: 24px;
