@@ -8,12 +8,10 @@ interface IDeffaultButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
 }
 
-const DeffaultButton: FC<IDeffaultButtonProps> = ({ className, children, ...props }) => {
-  return (
-    <button className={classNames(styles.btn, className)} {...props}>
-      {children}
-    </button>
-  );
-};
+const DeffaultButton: FC<IDeffaultButtonProps> = ({ className, children, ...props }) => (
+  <button className={classNames(styles.btn, className)} {...props}>
+    {children}
+  </button>
+);
 
 export default DeffaultButton;

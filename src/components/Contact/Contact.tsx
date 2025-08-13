@@ -5,13 +5,11 @@ import { FC } from "react";
 
 import styles from "./styles.module.scss";
 
-const Contact: FC<IContact> = ({ name, image, contact, href }) => {
-  return (
-    <LinkOverlay className={styles.contact} href={href}>
-      <Image height="15" src={image} alt={name} />
-      <span>{contact}</span>
-    </LinkOverlay>
-  );
-};
+const Contact: FC<IContact> = ({ name, image, contact, href }) => (
+  <LinkOverlay className={styles.contact} href={href}>
+    <Image height="15" src={image} alt={name} />
+    <span>{contact}</span>
+  </LinkOverlay>
+);
 
 export default Contact;

@@ -4,19 +4,17 @@ import classNames from "classnames";
 import { Introduction } from "../Introduction";
 import styles from "./styles.module.scss";
 
-const Header = () => {
-  return (
-    <header className={styles.box}>
-      <Introduction />
+const Header = () => (
+  <header className={styles.box}>
+    <Introduction />
 
-      <div className={classNames("container", styles.wrapper)}>
-        <LinkOverlay href="/" className={styles.logo}>
-          <span>AbeloHost Shop</span>
-          <span className={styles.dot}>.</span>
-        </LinkOverlay>
-      </div>
-    </header>
-  );
-};
+    <div className={classNames("container", styles.wrapper)}>
+      <LinkOverlay href="/" className={styles.logo}>
+        <span>AbeloHost Shop</span>
+        <span className={styles.dot}>.</span>
+      </LinkOverlay>
+    </div>
+  </header>
+);
 
 export default Header;

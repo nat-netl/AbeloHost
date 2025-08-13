@@ -14,23 +14,21 @@ const Input: FC<IInputProps> = ({
   type = "text",
   error,
   ...props
-}) => {
-  return (
-    <div className={styles.box}>
-      <input
-        className={classNames(className, styles.input)}
-        type={type}
-        required={required}
-        {...props}
-      />
+}) => (
+  <div className={styles.box}>
+    <input
+      className={classNames(className, styles.input)}
+      type={type}
+      required={required}
+      {...props}
+    />
 
-      {error && (
-        <div className={styles.error}>
-          <span className={styles["error-text"]}>{error}</span>
-        </div>
-      )}
-    </div>
-  );
-};
+    {error && (
+      <div className={styles.error}>
+        <span className={styles["error-text"]}>{error}</span>
+      </div>
+    )}
+  </div>
+);
 
 export default Input;
