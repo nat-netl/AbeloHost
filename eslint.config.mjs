@@ -1,11 +1,11 @@
 import js from "@eslint/js";
 import pluginNext from "@next/eslint-plugin-next";
+import prettierConfig from "eslint-config-prettier";
 import pluginReact from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import { defineConfig } from "eslint/config";
 import globals from "globals";
 import tseslint from "typescript-eslint";
-import prettierConfig from "eslint-config-prettier";
 
 export default defineConfig([
   {
