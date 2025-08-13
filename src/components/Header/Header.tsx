@@ -1,4 +1,4 @@
-import { LinkOverlay } from "@/ui-components/link";
+import { LinkOverlay } from "@/ui-components/links/Link";
 import classNames from "classnames";
 
 import styles from "./styles.module.scss";

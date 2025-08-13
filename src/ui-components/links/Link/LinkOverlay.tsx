@@ -9,8 +9,12 @@ interface ILinkProps extends LinkProps {
   children: ReactNode;
 }
 
-const LinkOverlay: FC<ILinkProps> = ({ className, ...props }) => {
-  return <Link className={classNames(styles.link, className)} {...props}></Link>;
+const LinkOverlay: FC<ILinkProps> = ({ className, children, ...props }) => {
+  return (
+    <Link className={classNames(styles.link, className)} {...props}>
+      {children}
+    </Link>
+  );
 };
 
 export default LinkOverlay;
