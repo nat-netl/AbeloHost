@@ -1,4 +1,4 @@
-@use "./variables.scss" as *;
+@use "./variables" as *;
 
 @font-face {
   font-family: "Inter Light";
@@ -36,7 +36,6 @@
 
 html {
   min-height: 100vh;
-  transition: all 0.8s;
 }
 
 body {
@@ -49,6 +48,10 @@ body {
 a {
   text-decoration: none;
   cursor: pointer;
+
+  &:hover {
+    transition: all 0.8s;
+  }
 }
 
 button {

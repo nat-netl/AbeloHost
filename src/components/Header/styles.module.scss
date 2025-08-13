@@ -1,0 +1,20 @@
+@use "../../app/variables" as *;
+
+.wrapper {
+  padding: 60px 0;
+}
+
+.box {
+  background-color: $black;
+}
+
+.logo {
+  height: auto;
+  font-size: 48px;
+  font-family: $inter-bold;
+  line-height: initial;
+}
+
+.dot {
+  color: $accent-red;
+}
