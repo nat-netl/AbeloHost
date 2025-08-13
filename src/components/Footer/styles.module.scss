@@ -1,21 +1,20 @@
 @use "../../styles/variables" as *;
 
-.wrapper {
-  padding: 60px 0;
-}
-
 .box {
   background-color: $black;
   border-bottom: 3px solid $accent-red-error;
+
+  .wrapper {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.logo {
-  height: auto;
-  font-size: 48px;
-  font-family: $inter-bold;
-  line-height: initial;
-}
-
-.dot {
-  color: $accent-red;
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: $white;
 }
